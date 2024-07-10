@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Helvetica;
+    src: url("./font/HelveticaNeue-Bold.otf");
+    src: url("./font/HelveticaNeue-Medium.otf");
+    font-style: normal; 
+    font-weight: normal;
+}   
+body {
+    background-color: #F4F4F9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    margin-top: 150px;
+}
+
+.view {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.view-landscape {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.view-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение */
+}
+
+.view-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 250px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F4F4F9;
+}
+
+.card img {
+    max-width: 600px;
+    max-height: 500px;
+    margin-right: 80px;
+}
+
+.card.reverse {
+    flex-direction: row-reverse;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.element img {
+    max-width: 400px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 70px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    background-color: #F4F4F9;
+
+}
+p{
+    font-family:  Helvetica;
+    font-size: 52px;
+    font-weight: 800;
+    margin: 0;
+}
+.card li, .element li{
+    font-size: 18px;
+    margin: 0;
+    background-color: #F4F4F9;
+}

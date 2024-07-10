@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactus Jack</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    {% block extra_head %}
+    {% endblock %}
+</head>
+<body>
+    {% include 'CactusApp/header.html' %}
+    <main>
+        {% block content %}
+        <div class = "main-container">
+            <div class="view">
+                <img src="{% static "img/landscape.jpg" %}" alt="landscape" class="view-landscape">
+                <div class="view-overlay"></div>
+                <div class="view-content">Кактусы</div>
+            </div>
+            <div class = "main-content">
+                <h4>
+                    <span class = "bold">Кактусы — </span>своеобразные колючие растения, приспособившиеся к жизни в засушливых пустынях, на малоплодородных плоскогорьях южных стран, относящиеся к обширному семейству кактусовых. В таких условиях эти растения приспособились запасать в стебле влагу в период дождей для засушливого времени.
+                    Кактусы, за небольшим исключением, не имеют листьев, и их функцию выполняет утолщенный зеленый стебель, имеющий самую разнообразную форму: цилиндрическую, колоновидную, шаровидную, трехгранную и др. Стебли кактусов бывают гладкие, ребристые, бугорчатые, морщинистые с сосочками или выемками; они покрыты снаружи жесткой кутикулой с восковым налетом.
+                </h4>
+                <div class = "main-cactus">
+                    <a><img src = "{% static "img/cactus.jpg" %}"></a>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+    </main>
+    {% include 'CactusApp/footer.html' %}
+    {% block extra_scripts %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactus Jack</title>
+    <link rel="stylesheet" href="{% static "css/author.css" %}">
+    {% block extra_head %}
+    {% endblock %}
+</head>
+<body>
+    {% include 'CactusApp/header.html' %}
+    <main>
+        {% block content %}
+        <div class = "main-container">
+            <div class="view">
+                <img src="{% static "img/landscape.jpg" %}" alt="landscape" class="view-landscape">
+                <div class="view-overlay"></div>
+                <div class="view-content">Кактусы</div>
+            </div>
+            <div class="content">
+                <p> Об авторе</p>
+                <div class="card">
+                    <div class="imgs">
+                        <img class="a1" src="{% static "img/a1.jpg" %}" alt="kartinka">
+                        <img class="a3" src="{% static "img/a3.jpg" %}" alt="kartinka">
+                    </div>
+                    <h1>Привет !) <br>
+                        Я Матсапаева Нигара. Учусь в КНИТУ-КАИ на специальности "Прикладная информатика ", и этот сайт моя проектная работа на летнюю практику. <br>
+                        Я прилетела из другой страны чтобы достичь своей цели это, получить высшее образование , а также познавать мир.
+                        Очень люблю природу ,и поэтому очень часто гуляю где больше растений. Люблю наблюдать как расцветают цветы, разные растения и кактусы. А также я люблю спорт , участвую в команде КАИ по "Регби". Как говорит моя мама - я обладаю удивительной способностью радоваться всему во круг . Я любознательный и творческий человек, активно участвует во всех  мероприятиях.<br>
+                        В связи с тем что я скоро уезжаю к себе на Родину повидаться с мамой и с братицем ,то этот проект выполнела в максимально сжатый срок , и посвящен он удивительным растениям "Кактусам".
+                    </h1>
+                    <div class="tgg">
+                        <a href="https://t.me/nigarocka"><img src="{% static "img/tg.svg" %}" alt=""></a>
+                        <a href="https://vk.com/nigarocka__msy18" ><img src="{% static "img/vk.svg" %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+    </main>
+    {% include 'CactusApp/footer.html' %}
+    {% block extra_scripts %}
+    {% endblock %}
+</body>
+</html>

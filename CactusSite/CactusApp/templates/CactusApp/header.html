@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactus Jack</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top-line">
+                <div class="logo">
+                    <a href="/"><img src="{% static "img/Cactuslogo.png" %}" alt="Кактусы"></a>
+                </div>
+                <nav class="main-mnu">
+                    <ul class="clearfix">
+                        <li><a href="/more">О Кактусах</a></li>
+                        <li><a href="/facts">Занимательные факты</a></li>
+                        <li><a href="/photos">Фотографии</a></li>
+                        <li><a href="/author">Об авторе</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <a class="loupe" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA%D1%82%D1%83%D1%81%D0%BE%D0%B2%D1%8B%D0%B5"><img src="{% static "img/pngwing.png" %}" alt="лупа"></a>
+                </div>
+            </div>
+        </div>
+    </header>
